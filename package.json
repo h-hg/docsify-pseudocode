@@ -1,0 +1,42 @@
+{
+  "name": "docsify-pseudocode",
+  "author": "Hunter Hwang",
+  "version": "0.1.0",
+  "license": "MIT",
+  "homepage": "https://h-hg.github.io/docsify-pseudocode",
+  "description": "A plugin to render pseudocode in docsify",
+  "keywords": [
+    "docsify",
+    "pseudocode",
+    "algorithmic",
+    "latex"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/h-hg/docsify-pseudocode.git"
+  },
+  "bugs": {
+    "url": "https://github.com/h-hg/docsify-pseudocode/issues"
+  },
+  "jsdelivr": "https://cdn.jsdelivr.net/gh/h-hg/docsify-pseudocode/dist/docsify-pseudocode.min.js",
+  "files": [
+    "README.md",
+    "LICENSE",
+    "src/",
+    "dist/"
+  ],
+  "scripts": {
+    "build-dev": "parcel build src/index.js --out-file docsify-pseudocode.js --no-minify",
+    "build-prod": "parcel build src/index.js --out-file docsify-pseudocode.min.js --no-source-maps",
+    "build": "npm run build-dev && npm run build-prod",
+    "docs": "npm run build && docsify serve docs/ --open",
+    "fix": "eslint --fix src/*.js",
+    "test": "echo 'No test to run'"
+  },
+  "devDependencies": {
+    "docsify-cli": "^4.4.2",
+    "eslint": "^7.16.0",
+    "eslint-config-google": "^0.14.0",
+    "parcel-bundler": "^1.12.4"
+  }
+}
