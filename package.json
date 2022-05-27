@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "license": "MIT",
   "homepage": "https://h-hg.github.io/docsify-pseudocode",
-  "description": "A plugin to render pseudocode in docsify",
+  "description": "A docsify plugin to render pseudocode",
   "keywords": [
     "docsify",
     "pseudocode",
@@ -19,6 +19,7 @@
     "url": "https://github.com/h-hg/docsify-pseudocode/issues"
   },
   "jsdelivr": "https://cdn.jsdelivr.net/gh/h-hg/docsify-pseudocode/dist/docsify-pseudocode.min.js",
+  "unpkg": "dist/docsify-pseudocode.min.js",
   "files": [
     "README.md",
     "LICENSE",
